@@ -5,8 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>More Javascript</title>
-    <link rel="stylesheet" href="styles.css"/>
-</head>
+    <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+    integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+    crossorigin="anonymous"
+/>
 <body>
     <main class="container">
 
@@ -15,19 +18,28 @@
     <div class="overlay"></div>
 
     <form id="user-info">
-        <label for="user-info" class="sr-only">Enter Your Information</label>
+        <label for="First Name" class="sr-only">First Name</label>
         <input
-            class="user-info-input"
+            class="fName"
             type="text"
-            id="user-info"
-            name="user-info"
-            placeholder="Info Here"/>
-            <button type="submit" class="btn" aria-label="Add new entry">
-            &plus;
+            id="firstName"
+            placeholder="First"/>
+         
+        
+        <label for="Last Name" class="sr-only">Last Name</label>
+            <input
+            class="lName"
+            type="text"
+            id="lastName"
+            placeholder="Last"/>
+            <button type="submit" class="btn btn-success" onclick="buildList">
+            Submit
             </button>
     </form>
-    </main>
+    <script src="app.js"></script>
 
+    </main>
+    
     
 </body>
 </html>
